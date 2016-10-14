@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Planets of the Universe</title>
+  <link href="{{site.baseurl}}/css/common.css" rel="stylesheet" >
 </head>
 <body>
 
-<head>
+<header>
   <h1>Planets of the Universe</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="news.html">News</a></li>
-    </ul>
-  </nav>
-</head>
+  {% include nav.html %}
+</header>
 
 {{content}}
+
+<footer>
+  {% include nav.html %}
+  <p>c 2013 Planets of the Universe</p>
+</footer>
 
 </body>
 </html>
